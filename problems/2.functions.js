@@ -32,8 +32,9 @@ function incrementGlobalCount(val) {
 * @param {number} thirdNum - The third number
 * @returns {number} - The product of the three numbers
 */
-function multiply(number) {
-  let number =  firstNum * secondNum * thirdNum
+function multiply(firstNum, secondNum, thirdNum) {
+  return  firstNum * secondNum * thirdNum
+ 
 
 
   

@@ -2,8 +2,13 @@
 * @param {number} num - The number to iterate up to
 * @param {number[]} - An array of even numbers from 0 to {num}
 */
-function evenNumbers() {
-
+function evenNumbers(num) {
+  let arr = []
+  for (let i = 0; i <= num; i++)  {
+    if(i%2 === 0) {
+      arr.push(i)
+    } 
+}return arr
 }
 
 /** Returns all multiples of a given number up to 1000
@@ -11,9 +16,18 @@ function evenNumbers() {
 * @param {number} num - The number to find multiples of
 * @returns {number[]} - An array of all multiples of {num} up to 1000
 */
-function multiplesToOneThousand() {
-
+function multiplesToOneThousand(num) {
+  let newArr = []
+  let i = 0
+  while (i < 1000) {
+    if (i % num === 0 ){
+      newArr.push(i)
+      i++
+    }else i++ 
+     }
+     return newArr
 }
+console.log(multiplesToOneThousand(3))
 
 /** Returns the first n powers of 2 (starting at 0)
 * Sample input: 6
@@ -22,9 +36,18 @@ function multiplesToOneThousand() {
 * @param {number} count - How many powers of two to find
 * @returns {number[]} - An array with the first {count} powers of two
 */
-function powersOfTwo() {
+function powersOfTwo(count) {
+  let newArr =[]
+  let i = 0 
+  while (i < count){
+  let  pow = (Math.pow(2, i))
+   newArr.push(pow)
+   i++
+  }
+return newArr
+  }
+console.log(powersOfTwo(2))
 
-}
 
 module.exports = {
   evenNumbers,
